@@ -14,6 +14,7 @@ function typeEffect(e, speed) {
       clearInterval(timer);
     }
   }, speed);
+  
 }
 
 // type affect to header
