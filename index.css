@@ -229,19 +229,22 @@ body {
     z-index: 10;
 }
 
-/* .texte h1 span {
-    opacity: 0;
-    margin: 0;
-    padding: 0;
-    letter-spacing: -20px;
-    animation: loading 1s linear ;
+.info .texte h1 span{
+    visibility: hidden;
+    animation: loading 1s linear infinite;
 }
 
 @keyframes loading{
-    to{
-
+    0% {
+        visibility: visible;
     }
-} */
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
 
 
 .texte p {
