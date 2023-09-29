@@ -23,8 +23,9 @@ function agrandissementProjet() {
   if (agrandi) {
     this.style.width = "";
     this.style.height = "";
-    h3.style.marginRight = "";
-    titleProjet.style.fontSize = "";
+    titleProjet.style.marginRight = "";
+    titleProjet.style.paddingBottom = "";
+    titleProjet.style.paddingTop = "";
     agrandi = false;
     var sommaire = document.querySelector(".sommaire");
 
@@ -32,9 +33,10 @@ function agrandissementProjet() {
     removeProjet(this);
   } else {
     this.style.width = "15em";
-    this.style.height = "18em";
-    h3.style.marginRight = "2em";
-    titleProjet.style.fontSize = "32px";
+    this.style.height = "15em";
+    titleProjet.style.paddingBottom = "1.3em";
+    titleProjet.style.paddingTop = "1.1em";
+    titleProjet.style.marginRight = "2em";
     titleContact.style.fontSize = "";
 
     agrandi = true;
@@ -58,7 +60,6 @@ function agrandissementContact() {
   if (agrandi) {
     this.style.width = "";
     this.style.height = "";
-    titleContact.style.fontSize = "";
     agrandi = false;
     var sommaire = document.querySelector(".sommaire");
 
@@ -66,8 +67,8 @@ function agrandissementContact() {
   } else {
     this.style.width = "10em";
     this.style.height = "10em";
+    titleProjet.style.marginRight = "";
     titleProjet.style.fontSize = "";
-    titleContact.style.fontSize = "32px";
     agrandi = true;
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";

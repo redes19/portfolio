@@ -7,7 +7,7 @@ body {
     background-color: #0a0f27f6;
     color: white;
     font-family: 'Nunito Sans', sans-serif;
-    cursor: none;
+    /* cursor: pointer; */
 }
 
 .mouseMove {
@@ -276,7 +276,8 @@ h2 {
 }
 
 .titleProjet:hover{
-    font-size: 32px;
+    /* font-size: 32px; */
+    transform: scale(1.2);
 }
 
 .titleProjet:focus {
@@ -302,7 +303,8 @@ h2 {
 }
 
 .titleContact:hover{
-    font-size: 32px;
+    /* font-size: 32px; */
+    transform: scale(1.2);
 }
 
 .titleContact:focus {
@@ -349,10 +351,13 @@ h2 {
 }
 
 .projet {
-    border: 1px solid transparent;
+    /* border: 1px solid red; */
     /* -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1); */
-    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1);
-    /* border: 1px solid green; */
+    border-width: 1px; /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solide dans ce cas) */
+    border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
+    border-image-slice: 1; /* La bordure utilise l'image dégradée */
+    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); 
 }
 
 
@@ -376,9 +381,13 @@ h2 {
 }
 
 .contact {
-    border: 1px solid transparent;
+    /* border: 1px solid blueviolet; */
     -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
-    transition: all 2.5s cubic-bezier(0.5, 0.24, 0, 1);
+    border-width: 1px; /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solide dans ce cas) */
+    border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
+    border-image-slice: 1; /* La bordure utilise l'image dégradée */
+    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); ;
 }
 
 
@@ -386,15 +395,16 @@ h2 {
 .container-list{
    display: flex;
    flex-direction: row;
-   align-items: center;
+   /* align-items: center; */
    justify-content: space-around;
    color: #FCF6F3;
    transition: 2s ease;
-   /* border: 1px solid red; */
+   /* border: 1px solid rgb(43, 199, 95); */
    width: 25em;
-   height: 30em;
+   height: auto;
    transition: 3s ease-in;
    padding: 5px;
+   margin: 0;
 }
 
 .container-list:focus {
@@ -420,6 +430,7 @@ h2 {
     /* border: 1px solid blueviolet; */
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 li {
