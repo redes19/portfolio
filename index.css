@@ -229,7 +229,13 @@ body {
     z-index: 10;
 }
 
+span{
+    color: red;
+    font-size: 5em;
+}
+
 .info .texte h1 span{
+    color: red;
     visibility: hidden;
     animation: loading 1s linear infinite;
 }
