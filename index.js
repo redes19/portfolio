@@ -10,7 +10,8 @@ var titleContact = document.querySelector(".titleContact");
 projet.addEventListener("click", () => agrandissementProjet(projet));
 contact.addEventListener("click", () => agrandissementContact(contact));
 
-var agrandi = false;
+var agrandi1 = false;
+var agrandi2 = false;
 
 const mouseMove = document.querySelector(".mouseMove");
 
@@ -23,15 +24,15 @@ document.documentElement.style.cursor = "none";
 
 // fonction pour agrandire les div du sommmaire pour mettre en avant les projet et contacts
 function agrandissementProjet(e) {
-  if (agrandi) {
+  if (agrandi1) {
     e.style.width = "";
     e.style.height = "";
     titleProjet.style.marginRight = "";
     titleProjet.style.paddingBottom = "";
     titleProjet.style.paddingTop = "";
-    agrandi = false;
+    agrandi1 = false;
     var sommaire = document.querySelector(".sommaire");
-    console.log("2");
+    console.log("2" + agrandi1 + " " + agrandi2);
 
     // Appelez la fonction removeProjet en passant la référence à la div projet
     removeProjet(e);
@@ -42,9 +43,10 @@ function agrandissementProjet(e) {
     titleProjet.style.paddingTop = "1.1em";
     titleProjet.style.marginRight = "2em";
     titleContact.style.fontSize = "";
-    console.log("1");
+    console.log("1" + agrandi1 + " " + agrandi2);
 
-    agrandi = true;
+    agrandi1 = true;
+    agrandi2 = false;
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";
 
@@ -55,7 +57,7 @@ function agrandissementProjet(e) {
     }, 1000);
 
 
-    if (agrandi === true) {
+    if (agrandi1 === true) {
       contact.style.width = "";
       contact.style.height = "";
     }
@@ -63,12 +65,12 @@ function agrandissementProjet(e) {
 }
 
 function agrandissementContact(e) {
-  if (agrandi) {
+  if (agrandi2) {
     e.style.width = "";
     e.style.height = "";
-    agrandi = false;
+    agrandi2 = false;
     var sommaire = document.querySelector(".sommaire");
-    console.log("4");
+    console.log("4" + agrandi1 + " " + agrandi2);
 
     removeContact(e);
   } else {
@@ -76,10 +78,11 @@ function agrandissementContact(e) {
     e.style.height = "10em";
     titleProjet.style.marginRight = "";
     titleProjet.style.fontSize = "";
-    agrandi = true;
+    agrandi2 = true;
+    agrandi1 = false;
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";
-    console.log("3");
+    console.log("3" + agrandi1 + " " + agrandi2);
 
     removeProjet(projet);
 
@@ -87,7 +90,7 @@ function agrandissementContact(e) {
       showContact(e);
     }, 1000);
 
-    if (agrandi === true) {
+    if (agrandi2 === true) {
       projet.style.width = "";
       projet.style.height = "";
     }
