@@ -13,15 +13,6 @@ contact.addEventListener("click", () => agrandissementContact(contact));
 var agrandi1 = false;
 var agrandi2 = false;
 
-const mouseMove = document.querySelector(".mouseMove");
-
-window.addEventListener("mousemove", (e) => {
-  mouseMove.style.left = e.pageX + "px";
-  mouseMove.style.top = e.pageY + "px";
-});
-
-document.documentElement.style.cursor = "none";
-
 // fonction pour agrandire les div du sommmaire pour mettre en avant les projet et contacts
 function agrandissementProjet(e) {
   if (agrandi1) {

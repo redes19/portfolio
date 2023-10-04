@@ -1,0 +1,23 @@
+.home{
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.home img{
+    width: 50px;
+    height: auto;
+}
+
+.home:hover{
+    transform: scale(1.1);
+    background-color: #ffffff5b; /* Couleur de fond du cercle (blanc) */
+    box-shadow: 0 0 10px 15px rgba(255, 255, 255, 0.253);
+}
