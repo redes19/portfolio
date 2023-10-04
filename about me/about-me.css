@@ -21,3 +21,44 @@
     background-color: #ffffff5b; /* Couleur de fond du cercle (blanc) */
     box-shadow: 0 0 10px 15px rgba(255, 255, 255, 0.253);
 }
+
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    width: 100em;
+    height: 21em;
+    margin-top: 8em;
+    margin-left: 11em;
+    padding: 15px;
+}
+
+.container1 .titre{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1 .titre h1{
+    font-size: 100px;
+    font-weight: 100;
+    margin: 0;
+    padding-bottom: 10px;
+    /* border: 1px solid; */
+
+}
+
+.container1 .titre img{
+    width: 200px;
+    height: auto;
+    margin-left: 5em;
+    /* border: 1px solid; */
+
+}
+
+.texte{
+    border: 1px solid red;
+    width: 40em;
+}
