@@ -29,6 +29,7 @@
 .texte p {
     font-size: 24px;
     z-index: 10;
+    line-height: 1.5;
 }
 
 .sommaire{

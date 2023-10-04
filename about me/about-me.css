@@ -33,7 +33,7 @@
     /* border: 1px solid; */
     width: 100em;
     height: 21em;
-    margin-top: 8em;
+    margin-top: 6.5em;
     margin-left: 11em;
     padding: 15px;
 }
@@ -46,7 +46,7 @@
 }
 
 .container1 .titre h1{
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 100;
     margin: 0;
     padding-bottom: 10px;
@@ -55,14 +55,14 @@
 }
 
 .container1 .titre img{
-    width: 200px;
+    width: 180px;
     height: auto;
     margin-left: 5em;
     /* border: 1px solid; */
 
 }
 
-.texte{
+.texte1{
     /* border: 1px solid red; */
     width: 40em;
     display: flex;
@@ -71,7 +71,69 @@
     line-height: 1.5;
 }
 
-.texte p {
-    font-size: 24px;
+.texte1 p {
+    font-size: 22px;
     font-weight: 100
+}
+
+.container2{
+    border: 1px solid;
+    width: 100em;
+    height: 23em;
+    margin-left: 11em;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texte2{
+    /* border: 1px solid red; */
+    width: 15em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #12769E, #043775);
+    -webkit-background-clip: text; /* Pour une compatibilité avec certains navigateurs Webkit */
+    background-clip: text;
+    color: transparent
+}
+
+.texte2 h2 {
+    font-size: 48px;
+  
+    /* Ajoutez un dégradé comme couleur de fond de la ligne */
+    background-image: linear-gradient(to right, #12769E, #0d54ac);
+    background-position: 0 100%; /* Positionne le dégradé en bas de l'élément */
+    background-size: 100% 3px; /* Largeur de la ligne et 100% de la largeur de l'élément */
+    background-repeat: no-repeat; /* Empêche la répétition du dégradé */
+    padding-bottom: 5px; 
+    border-radius: 2px;
+}
+
+.skills{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 99em;
+    height: 17em;
+    padding: 0;
+}
+
+#dev{
+    border: 1px solid;
+    width: 25em;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 26px;
+    padding: 15px;
+}
+
+.skills #dev h3 {
+    margin: 0;
 }
