@@ -23,9 +23,9 @@
       0 0 10px 15px rgba(255, 255, 255, 0.253); /* Ombre intérieure pour créer l'effet de dégradé autour de la bordure */
   }
   
-  
-
-
+  a {
+    cursor: none; 
+}
 
 .container1{
     display: flex;
@@ -47,7 +47,7 @@
 
 .container1 .titre h1{
     font-size: 80px;
-    font-weight: 100;
+    font-weight: bold;
     margin: 0;
     padding-bottom: 10px;
     /* border: 1px solid; */
@@ -104,6 +104,7 @@
 
 .texte2 h2 {
     font-size: 48px;
+    font-weight: bold;
   
     /* Ajoutez un dégradé comme couleur de fond de la ligne */
     background-image: linear-gradient(to right, #12769E, #0d54ac);
@@ -124,8 +125,24 @@
     padding: 0;
 }
 
+.web{
+    /* -webkit-box-shadow: -7px 7px 21px 2px rgba(255, 255, 255, 0.42); 
+    box-shadow: -7px 7px 21px 2px rgba(255, 255, 255, 0.42); */
+    box-shadow: 
+      0 0 0 2px #12769E, /* Ombre externe avec le dégradé */
+      0px 0px 21px 2px rgba(255, 255, 255, 0.253);
+}
+
+.game{
+    /* -webkit-box-shadow: -7px 7px 21px 2px rgba(255, 255, 255, 0.42); 
+    box-shadow: -7px 7px 21px 2px rgba(255, 255, 255, 0.42); */
+    box-shadow: 
+      0 0 0 2px #12769E, /* Ombre externe avec le dégradé */
+      0px 0px 21px 2px rgba(255, 255, 255, 0.253);
+}
+
 #dev{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 25em;
     display: flex;
     flex-direction: column;
@@ -138,10 +155,11 @@
 
 .skills #dev h3 {
     margin: 0;
+    font-weight: bold;
 }
 
 #i{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 25em;
     height: 3.5em;
     display: flex;
@@ -166,3 +184,7 @@
     align-self: center;
 }
   
+#list li img{
+    width: 2em;
+    height: auto;
+}
