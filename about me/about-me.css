@@ -1,32 +1,3 @@
-.home {
-    position: absolute;
-    top: 2.5%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid transparent; /* Bordure transparente */
-  }
-  
-  .home img {
-    width: 50px;
-    height: auto;
-  }
-  
-  .home:hover {
-    transform: scale(1.1);
-    box-shadow: 
-      0 0 0 2px #12769E, /* Ombre externe avec le dégradé */
-      0 0 10px 15px rgba(255, 255, 255, 0.253); /* Ombre intérieure pour créer l'effet de dégradé autour de la bordure */
-  }
-  
-  a {
-    cursor: none; 
-}
-
 .container1{
     display: flex;
     justify-content: space-between;

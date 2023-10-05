@@ -1,0 +1,31 @@
+#carrousel{
+    margin-top: 7em;
+    margin-left: 13em;
+    width: 45em;
+    height: 20em;
+    border: 1px solid;
+    box-shadow: 0 0 15px 0.5px white;
+    position: relative;
+}
+
+.bouton{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 30%;
+    opacity: 0.7;
+}
+
+.bouton:hover{
+    width: 105px;
+    opacity: 1;
+}
+
+#g{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+#d{
+    left: 87%;
+}
