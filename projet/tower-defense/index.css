@@ -1,18 +1,103 @@
 .container1{
-    border: 1px solid;
+    /* border: 1px solid; */
     margin: 0;
     padding: 0;
     width: 100em;
-    height: 21em;
-    margin-top: 9em;
+    height: 17em;
+    margin-top: 8em;
     margin-left: 11em;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    /* border: 1px solid; */
+    width: 55em;
+    height: 15em;
+    display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
+.title h1 {
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+.title h2 {
+    font-size: 65px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container2{
+    width: 100em;
+    height: 24em;
+    /* border: 1px solid; */
+    margin: 0;
+    margin-left: 11em;
+    margin-top: 3em;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texte{
+    /* border: 1px solid; */
+    width: 50em;
+    height: 20em;
+    margin: 0;
+    margin-right: 5em;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texte p {
+    /* border: 1px solid red; */
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.outils {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+}
+
+.outils h2 {
+    font-size: 36px;
+}
+
+#list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid green; */
+    width: 15em;
+    height: auto;
+    list-style: none;
+}
+
+#list li {
+    padding: 0 5px;
+    align-self: center;
+}
+  
+#list li img{
+    width: 4em;
+    height: auto;
+}
+
 #carrousel{
-    width: 45em;
+    width: 38em;
     height: 20em;
     border: 1px solid;
     box-shadow: 0 0 15px 0.5px white;
@@ -51,15 +136,4 @@
     background-size: cover;
     z-index: 15;
     
-}
- 
-.title{
-    border: 1px solid;
-    width: 55em;
-    display: flex;
-    justify-content: center;
-}
-
-.title h1 {
-    font-size: 80px;
 }
