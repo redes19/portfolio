@@ -6,6 +6,7 @@
     border: 1px solid;
     box-shadow: 0 0 15px 0.5px white;
     position: relative;
+    overflow: hidden;
 }
 
 .bouton{
@@ -28,4 +29,14 @@
 
 #d{
     left: 87%;
+}
+
+.photo{
+    width: 45em;
+    height: 20em;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    z-index: 15;
+    
 }
