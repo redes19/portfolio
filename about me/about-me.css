@@ -146,7 +146,7 @@
     justify-content: space-around;
     /* border: 1px solid green; */
     width: 15em;
-    height: 3em;
+    height: auto;
     list-style: none;
 }
 

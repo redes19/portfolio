@@ -24,11 +24,25 @@
     font-size: 80px;
     margin: 0;
     padding: 0;
+
+    background-image: linear-gradient(to right, #12769E, #0d54ac);
+    background-position: 0 100%; /* Positionne le dégradé en bas de l'élément */
+    background-size: 100% 3px; /* Largeur de la ligne et 100% de la largeur de l'élément */
+    background-repeat: no-repeat; /* Empêche la répétition du dégradé */
+    padding-bottom: 5px; 
+    border-radius: 2px;
 }
 .title h2 {
     font-size: 65px;
     margin: 0;
     padding: 0;
+
+    background-image: linear-gradient(to right, #12769E, #0d54ac);
+    background-position: 0 100%; /* Positionne le dégradé en bas de l'élément */
+    background-size: 100% 3px; /* Largeur de la ligne et 100% de la largeur de l'élément */
+    background-repeat: no-repeat; /* Empêche la répétition du dégradé */
+    padding-bottom: 5px; 
+    border-radius: 2px;
 }
 
 
