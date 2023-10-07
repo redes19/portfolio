@@ -1,4 +1,4 @@
-let nbr = 3;
+let nbr = 6;
 let p = 0;
 let container = document.getElementById("container");
 let g = document.getElementById("g");
@@ -10,7 +10,7 @@ document.body.onload=function(){
     for(i=1; i<=nbr; i++){
         let div = document.createElement("div");
         div.className="photo";
-        div.style.backgroundImage="url('/images/tower-defense/img"+i+".jpg')";
+        div.style.backgroundImage="url('/images/tower-defense/img"+i+".png')";
         container.appendChild(div);
     }
     display();
