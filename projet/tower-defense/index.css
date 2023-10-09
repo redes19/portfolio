@@ -111,8 +111,8 @@
 }
 
 #carrousel{
-    width: 38em;
-    height: 20em;
+    width: 650px;
+    height: 320px;
     border: 1px solid;
     box-shadow: 0 0 15px 0.5px white;
     position: relative;
@@ -143,11 +143,11 @@
 }
 
 .photo{
-    width: 45em;
-    height: 20em;
+    min-width: 800px;
+    height: 320px;
+    background-size: cover;
     margin: 0;
     display: inline-block;
-    background-size: cover;
     z-index: 15;
     
 }
