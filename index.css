@@ -35,7 +35,7 @@
 .sommaire{
     /* border: 1px solid; */
     width: 20em;
-    padding-top: 5em;
+    padding-top: 3em;
     margin-right: 8em;  
     transition: width 2s ease;
     z-index: 10;
@@ -112,7 +112,7 @@ h2 {
 
 .line1{
     /* background-color: #043775; */
-    width: 13em;
+    width: 15em;
     height: 9px;
     position: absolute;
     background: linear-gradient(0.25turn, #043775, #12769E);
@@ -121,7 +121,7 @@ h2 {
 .line2{
     /* background-color: white; */
     width: 9px;
-    height: 19em;
+    height: 23em;
     position: absolute;
     background: linear-gradient(#043775, #12769E);
 }
@@ -175,6 +175,34 @@ h2 {
 }
 
 .contact {
+    /* border: 1px solid blueviolet; */
+    -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+    border-width: 1px; /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solide dans ce cas) */
+    border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
+    border-image-slice: 1; /* La bordure utilise l'image dégradée */
+    transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); ;
+}
+
+.about{
+    width: 3em;
+    height: 3em;
+    padding: 15px 100px;
+    margin-left: 25px;
+    margin-top: 45px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
     /* border: 1px solid blueviolet; */
     -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
     border-width: 1px; /* Largeur de la bordure */
