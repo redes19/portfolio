@@ -16,6 +16,7 @@ contact.addEventListener("click", () => agrandissementContact(contact));
 
 var agrandi1 = false;
 var agrandi2 = false;
+var agrandi3 = false;
 
 // fonction pour agrandire les div du sommmaire pour mettre en avant les projet et contacts
 function agrandissementProjet(e) {
@@ -26,7 +27,7 @@ function agrandissementProjet(e) {
     titleProjet.style.paddingBottom = "";
     titleProjet.style.paddingTop = "";
     agrandi1 = false;
-    console.log("2" + agrandi1 + " " + agrandi2);
+    console.log("2" + agrandi1 + " " + agrandi2 + " " + agrandi3);
 
     // Appelez la fonction removeProjet en passant la référence à la div projet
     removeProjet(e);
@@ -37,78 +38,107 @@ function agrandissementProjet(e) {
     titleProjet.style.paddingTop = "1.1em";
     titleProjet.style.marginRight = "2em";
     titleContact.style.fontSize = "";
-    console.log("1" + agrandi1 + " " + agrandi2);
+    console.log("1" + agrandi1 + " " + agrandi2 + " " + agrandi3);
 
     agrandi1 = true;
     agrandi2 = false;
+    agrandi3 = false;
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";
 
-    removeContact(contact);
+    
 
     setTimeout(() => {
       showProjet(e);
     }, 1000);
 
 
-    if (agrandi1 === true) {
+    if (agrandi1 === true ) {
       contact.style.width = "";
       contact.style.height = "";
+      about.style.width = "";
+      about.style.height = "";
+
+      removeContact(contact);
+      removeAbout(about);
     }
   }
 }
 
 function agrandissementAbout(e){
-  if(agrandi1){
+  if(agrandi2){
     e.style.width = "";
     e.style.height = "";
-    agrandi1 = false;
+    agrandi2 = false;
     removeAbout(e);
+
+    console.log("5" + agrandi1 + " " + agrandi2 + " " + agrandi3);
+
+
   } else {
     e.style.width = "10em";
     e.style.height = "7em";
     
-    agrandi1 = true;
-    agrandi2 = false;
+    agrandi1 = false;
+    agrandi2 = true;
+    agrandi3 = false;
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";
 
-    // removeContact(e);
-    // removeProjet(e);
+    console.log("6" + agrandi1 + " " + agrandi2 + " " + agrandi3);
 
     setTimeout(() => {
       showAbout(e);
-    }, 1000);
-  }
-}
-
-function agrandissementContact(e) {
-  if (agrandi2) {
-    e.style.width = "";
-    e.style.height = "";
-    agrandi2 = false;
-    var sommaire = document.querySelector(".sommaire");
-    console.log("4" + agrandi1 + " " + agrandi2);
-
-    removeContact(e);
-  } else {
-    e.style.width = "10em";
-    e.style.height = "10em";
-    agrandi2 = true;
-    agrandi1 = false;
-    var sommaire = document.querySelector(".sommaire");
-    sommaire.style.width = "30em";
-    console.log("3" + agrandi1 + " " + agrandi2);
-
-    removeProjet(projet);
-
-    setTimeout(() => {
-      showContact(e);
     }, 1000);
 
     if (agrandi2 === true) {
       projet.style.width = "";
       projet.style.height = "";
+      contact.style.width = "";
+      contact.style.height = "";
+  
+      removeProjet(projet);
+      removeContact(contact);
+    }
+  }
+
+}
+
+function agrandissementContact(e) {
+  if (agrandi3) {
+    e.style.width = "";
+    e.style.height = "";
+    agrandi3 = false;
+    var sommaire = document.querySelector(".sommaire");
+    console.log("4" + agrandi1 + " " + agrandi2 + " " + agrandi3);
+
+    removeContact(e);
+  } else {
+    e.style.width = "10em";
+    e.style.height = "10em";
+
+    agrandi2 = false;
+    agrandi1 = false;
+    agrandi3 = true;
+
+    var sommaire = document.querySelector(".sommaire");
+    sommaire.style.width = "30em";
+    console.log("3" + agrandi1 + " " + agrandi2 + " " + agrandi3);
+
+    
+
+    setTimeout(() => {
+      showContact(e);
+    }, 1000);
+
+    if (agrandi3 === true) {
+      projet.style.width = "";
+      projet.style.height = "";
+      about.style.width = "";
+      about.style.height = "";
+
+      removeProjet(projet);
+      removeAbout(about);
     }
   }
 }
@@ -231,7 +261,7 @@ function showAbout(e){
 }
 
 function removeAbout(e){
-  var containerAbout = e.querySelector("container-about");
+  var containerAbout = e.querySelector(".container-about");
 
   if (containerAbout) {
     containerAbout.remove();
