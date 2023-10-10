@@ -66,7 +66,8 @@ function agrandissementAbout(e){
     removeAbout(e);
   } else {
     e.style.width = "10em";
-    e.style.height = "10em";
+    e.style.height = "7em";
+    
     agrandi1 = true;
     agrandi2 = false;
     var sommaire = document.querySelector(".sommaire");
@@ -93,8 +94,6 @@ function agrandissementContact(e) {
   } else {
     e.style.width = "10em";
     e.style.height = "10em";
-    titleProjet.style.marginRight = "";
-    titleProjet.style.fontSize = "";
     agrandi2 = true;
     agrandi1 = false;
     var sommaire = document.querySelector(".sommaire");
@@ -215,4 +214,22 @@ function removeContact(e) {
   if (containerContact) {
     containerContact.remove();
   }
+}
+
+function showAbout(e){
+  var containerAbout = document.createElement("div");
+  containerAbout.classList.add("container-about");
+
+  var p = document.createElement("p");
+  p.classList.add("text-About");
+
+  p.innerHTML = 'Apprenez à me connaître <a href="/about-me/index.html"><img src="/logo/about-me.png"></a>'; 
+
+
+  containerAbout.appendChild(p);
+  e.appendChild(containerAbout);
+}
+
+function removeAbout(e){
+
 }

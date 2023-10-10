@@ -56,60 +56,6 @@ h2 {
 }
 
 
-.titleProjet {
-    font-size: 26px;
-    width: 5.5em;
-    height: 5.5em;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    transition: font-size 1s ;
-}
-
-.titleProjet:hover{
-    /* font-size: 32px; */
-    transform: scale(1.2);
-}
-
-.titleProjet:focus {
-    outline: none;
-}
-
-.titleProjet::selection{
-    background-color: transparent;
-    color: inherit;
-}
-
-.titleContact {
-    font-size: 26px;
-    width: 5.5em;
-    height: 5.5em;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0;
-    transition: font-size 1s ;
-}
-
-.titleContact:hover{
-    /* font-size: 32px; */
-    transform: scale(1.2);
-}
-
-.titleContact:focus {
-    outline: none;
-}
-
-.titleContact::selection{
-    background-color: transparent;
-    color: inherit;
-}
-
 .line1{
     /* background-color: #043775; */
     width: 15em;
@@ -210,6 +156,87 @@ h2 {
     border-image: linear-gradient(0.25turn, #12769E, #043775); /* Dégradé comme bordure */
     border-image-slice: 1; /* La bordure utilise l'image dégradée */
     transition: 2.5s cubic-bezier(0.5, 0.24, 0, 1); ;
+}
+
+.titleProjet {
+    font-size: 26px;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    transition: font-size 1s ;
+}
+
+.titleProjet:hover{
+    /* font-size: 32px; */
+    transform: scale(1.2);
+}
+
+.titleProjet:focus {
+    outline: none;
+}
+
+.titleProjet::selection{
+    background-color: transparent;
+    color: inherit;
+}
+
+.titleAbout {
+    font-size: 26px;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    transition: font-size 1s ;
+}
+
+.titleAbout:hover{
+    /* font-size: 32px; */
+    transform: scale(1.2);
+}
+
+.titleAbout:focus {
+    outline: none;
+}
+
+.titleAbout::selection{
+    background-color: transparent;
+    color: inherit;
+}
+
+.titleContact {
+    font-size: 26px;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    transition: font-size 1s ;
+}
+
+.titleContact:hover{
+    /* font-size: 32px; */
+    transform: scale(1.2);
+}
+
+.titleContact:focus {
+    outline: none;
+}
+
+.titleContact::selection{
+    background-color: transparent;
+    color: inherit;
 }
 
 
