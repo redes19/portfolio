@@ -46,22 +46,18 @@ function agrandissementProjet(e) {
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";
 
-    
-
     setTimeout(() => {
       showProjet(e);
     }, 1000);
 
 
-    if (agrandi1 === true ) {
-      contact.style.width = "";
-      contact.style.height = "";
-      about.style.width = "";
-      about.style.height = "";
+    contact.style.width = "";
+    contact.style.height = "";
+    about.style.width = "";
+    about.style.height = "";
 
-      removeContact(contact);
-      removeAbout(about);
-    }
+    removeContact(contact);
+    removeAbout(about);
   }
 }
 
@@ -91,15 +87,14 @@ function agrandissementAbout(e){
       showAbout(e);
     }, 1000);
 
-    if (agrandi2 === true) {
-      projet.style.width = "";
-      projet.style.height = "";
-      contact.style.width = "";
-      contact.style.height = "";
-  
-      removeProjet(projet);
-      removeContact(contact);
-    }
+    projet.style.width = "";
+    projet.style.height = "";
+    contact.style.width = "";
+    contact.style.height = "";
+
+    removeProjet(projet);
+    removeContact(contact);
+
   }
 
 }
@@ -131,15 +126,14 @@ function agrandissementContact(e) {
       showContact(e);
     }, 1000);
 
-    if (agrandi3 === true) {
-      projet.style.width = "";
-      projet.style.height = "";
-      about.style.width = "";
-      about.style.height = "";
+    projet.style.width = "";
+    projet.style.height = "";
+    about.style.width = "";
+    about.style.height = "";
 
-      removeProjet(projet);
-      removeAbout(about);
-    }
+    removeProjet(projet);
+    removeAbout(about);
+
   }
 }
 
@@ -251,7 +245,7 @@ function showAbout(e){
   containerAbout.classList.add("container-about");
 
   var p = document.createElement("p");
-  p.classList.add("text-About");
+  p.classList.add("text-about");
 
   p.innerHTML = 'Apprenez à me connaître <a href="/about-me/index.html"><img src="/logo/about-me.png"></a>'; 
 

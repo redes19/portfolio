@@ -212,6 +212,26 @@ h2 {
     color: inherit;
 }
 
+.text-about{
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-about a {
+    cursor: none;
+}
+
+.text-about img{
+    margin-left: 15px;
+    padding: 0;
+}
+
+.text-about img:hover{
+    transform: scale(1.2);    
+}
+
 .titleContact {
     font-size: 26px;
     width: 5.5em;
@@ -317,3 +337,4 @@ li {
     width: 70px;
     cursor: none;
 }
+
