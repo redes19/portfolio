@@ -25,7 +25,6 @@ function agrandissementProjet(e) {
     e.style.height = "";
     titleProjet.style.marginRight = "";
     titleProjet.style.paddingBottom = "";
-    titleProjet.style.paddingTop = "";
     agrandi1 = false;
     console.log("2" + agrandi1 + " " + agrandi2 + " " + agrandi3);
 
@@ -34,8 +33,7 @@ function agrandissementProjet(e) {
   } else {
     e.style.width = "15em";
     e.style.height = "15em";
-    titleProjet.style.paddingBottom = "1.3em";
-    titleProjet.style.paddingTop = "1.1em";
+    titleProjet.style.paddingBottom = "0.6em";
     titleProjet.style.marginRight = "2em";
     titleContact.style.fontSize = "";
     console.log("1" + agrandi1 + " " + agrandi2 + " " + agrandi3);
@@ -157,20 +155,34 @@ function showProjet(e) {
 
   // Créez un élément de liste <ul>
   var listeUl1 = document.createElement("ul");
+  listeUl1.id= "ul-projet";
   var listeUl2 = document.createElement("ul");
+  listeUl2.id= "ul-projet";
 
-  // Créez trois éléments de liste <li>
-  for (var i = 1; i <= 3; i++) {
-    var listItem1 = document.createElement("li");
-    listItem1.textContent = "Point " + i;
-    listeUl1.appendChild(listItem1);
-  }
 
-  for (var i = 1; i <= 3; i++) {
-    var listItem2 = document.createElement("li");
-    listItem2.textContent = "Point " + i;
-    listeUl2.appendChild(listItem2);
-  }
+  var listItem1 = document.createElement("li");
+  var listItem2 = document.createElement("li");
+  var listItem3 = document.createElement("li");
+  var listItem4 = document.createElement("li");
+
+  listItem1.innerHTML = '<a href="/projet/symbiot/symbiot.html">Symbiot</a>';
+  listItem2.innerHTML = '<a href="/projet/simon-game/simon-game.html">simon Game</a>';
+  listItem3.innerHTML = '<a href="/projet/quizzeo/quizzeo.html">Quizzeo</a>';
+  listItem4.innerHTML = '<a href="/projet/snake/snake.html">Snake</a>';
+
+  listeUl1.appendChild(listItem1);
+  listeUl1.appendChild(listItem2);
+  listeUl1.appendChild(listItem3);
+  listeUl1.appendChild(listItem4);
+
+  var listItem5 = document.createElement("li");
+  var listItem6 = document.createElement("li");
+
+  listItem5.innerHTML = '<a href="/projet/tower-defense/tower-defense.html">tower-defense</a>';
+  listItem6.innerHTML = '<a href="/projet/rpg-2d/rpg-2d.html">RPG 2D</a>';
+
+  listeUl2.appendChild(listItem5);
+  listeUl2.appendChild(listItem6);
 
   // Ajoutez les div enfant a leurs parents ainsi que les titres et les listes
   containerList.appendChild(containerList1);

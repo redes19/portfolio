@@ -272,8 +272,8 @@ h2 {
    width: 25em;
    height: auto;
    transition: 3s ease-in;
-   padding: 5px;
    margin: 0;
+   padding: 0;
 }
 
 .container-list:focus {
@@ -299,6 +299,11 @@ h2 {
     /* border: 1px solid blueviolet; */
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#ul-projet{
     margin: 0;
 }
 
