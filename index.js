@@ -73,8 +73,8 @@ function agrandissementAbout(e){
     var sommaire = document.querySelector(".sommaire");
     sommaire.style.width = "30em";
 
-    removeContact(e);
-    removeProjet(e);
+    // removeContact(e);
+    // removeProjet(e);
 
     setTimeout(() => {
       showAbout(e);
@@ -231,5 +231,9 @@ function showAbout(e){
 }
 
 function removeAbout(e){
+  var containerAbout = e.querySelector("container-about");
 
+  if (containerAbout) {
+    containerAbout.remove();
+  }
 }
